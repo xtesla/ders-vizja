@@ -1,41 +1,46 @@
 {
   "instructor": "Dr. Kishu Gupta",
-  "requirements": "Dersler çevrim içi; final sınavının üniversitede yüz yüze yapılacağını söyledi. Ders sırasında sorulara ve kısa etkinliklere katılmanı, verilen işi mümkünse ders içinde tamamlamanı bekliyor. Ders dışı ödevlerin yönergesini ve kesin teslim tarihini Microsoft Teams'teki ödev açıklamasından kontrol et. Ödevleri oradan teslim et; bireysel veya grup görevi olabilir. Son tarihten önce düzeltip yeniden gönderebilirsin. Hoca, devamın, sınıf içi etkinliklerin ve ödevlerin önemini özellikle vurguladı. Teams'teki Class Material bölümünden slaytları ve paylaşılan okumaları takip et.",
+  "requirements": "Ders düzeni: Hoca, 30 saatlik içeriğin yaklaşık 10 çevrim içi oturumda işleneceğini; yazılı finalin üniversitede yüz yüze olacağını söyledi. Takvim için Teams'i esas al.\n\nDers sırasında: Açıklamaları dinle, sorularını sor ve verilen etkinlikleri derste yapmaya çalış. Bu derste etkinlik sonucunun sohbet kutusuna veya özel mesajla gönderilebileceğini anlattı. Bir öğrenci sohbet erişimi olmadığını söyleyince çalışmayı elle yapıp ekran görüntüsünü daha sonra paylaşmasına da izin verdi.\n\nDers dışı ödevlerde: Görev açıklamasını, bireysel/grup düzenini, teslim yöntemini ve son tarihi Microsoft Teams > Assignments içinden kontrol et. Son tarihten önce ödevi düzelterek yeniden gönderebilirsin. Slayt ve okumalar için Teams > Shared > Class Material bölümünü izle. Devam, sınıf etkinliği ve ödevleri ihmal etme; hoca bunların sonuca katılacağını tekrar etti.",
   "grading": [
     {
-      "name": "Yazılı final sınavı",
-      "weight": "Ağırlık belirsiz",
-      "note": "Hoca sunumdaki notlandırma kısmında yazılı sınav için %100 dedi; aynı derste devam, etkinlik ve ödevlerin toplam puana ekleneceğini de birkaç kez söyledi. Kesin dağılım için Teams'teki resmî ölçütü veya hocanın açıklamasını doğrula."
+      "name": "Yazılı final",
+      "weight": "Kesin oran doğrulanmadı",
+      "note": "Hoca notlandırma bölümünde yazılı sınavın geçme ölçütüne '%100' katkı yapacağını söyledi. Aynı derste final teorik sınavı, devam ve ödev puanlarının birlikte hesaplanacağını da söyledi. Bu kayıt tek başına tutarlı bir ağırlık formülü vermiyor; resmî syllabus/Teams açıklaması gerekli."
     },
     {
-      "name": "Sınıf içi etkinlikler ve ödevler",
-      "weight": "Puan var, oran belirsiz",
-      "note": "Ders içi etkinliklerde yaklaşık 10 puandan, ödev örneğinde en çok 10 puandan söz etti. Zamanında teslim tam puan şansı sağlar; geç teslimde alınabilecek en yüksek puan yarıya düşer, teslim edilmezse sıfır."
+      "name": "Sınıf içi etkinlik",
+      "weight": "Oturum başına en çok yaklaşık 10 puan",
+      "note": "Hoca her derste etkinlik olabileceğini ve yaklaşık/en çok 10 puan kazanılabileceğini söyledi. İlk dersin CIA etkinliğine özel verilmiş bir puan veya son teslim saati transkriptte yok."
+    },
+    {
+      "name": "Ders dışı ödev",
+      "weight": "Ödev başına en çok 10 puan denildi",
+      "note": "Hoca zamanında teslimin tam puan alma şansı verdiğini, geç teslimde %50 kesinti nedeniyle alınabilecek en yüksek puanın 5 olduğunu, teslim edilmeyene 0 verileceğini anlattı. Son tarihten önce düzeltme ve yeniden teslim mümkün; sonrasında değil."
     },
     {
       "name": "Devam",
-      "weight": "Oran belirtilmedi",
-      "note": "Katılımın son puana ekleneceğini söyledi; bunun yazılı sınavla nasıl birleştirileceği net değil."
+      "weight": "Ağırlık belirtilmedi",
+      "note": "Derslere katılımın son puana ekleneceğini birkaç kez söyledi. Kaç oturumun zorunlu olduğu veya devamın sayısal oranı açıklanmadı."
     },
     {
-      "name": "Geçme ve ikinci şans",
-      "weight": "",
-      "note": "Hoca geçmek için mümkün olan toplam puanın en az %40'ını gerektiğini söyledi. %40'ın altında ama %30'un üzerinde kalanlara yeniden sınav şansı verilebileceğini; %30'un altında bu şansın olmadığını belirtti. Kesin uygulamayı resmî ders kurallarıyla doğrula."
+      "name": "Geçme ve ikinci sınav şansı",
+      "weight": "Ağırlık değil, eşik",
+      "note": "Hoca geçmek için mümkün toplam puanın en az %40'ını gerektiğini söyledi. %40'ın altında fakat %30'un üzerinde kalanlar için yeniden sınav şansından söz etti; %30'un altına olmadığını belirtti. Tam %30 durumu ve uygulamanın ayrıntıları kayıtta net değil."
     }
   ],
   "assignments": [
     {
-      "title": "ICS Lecture Assignment 1 – Foundation of Cyber Security",
-      "description": "İlk dersin kavramlarına ilişkin çoktan seçmeli kısa quiz. Microsoft Teams > Assignments bölümündeki bağlantıdan yanıtlayıp Submit ile gönder. Hoca yaklaşık 10 dakika süreceğini söyledi.",
+      "title": "ICS Lecture Assignment 1, Foundation of Cyber Security",
+      "description": "13 Ekim dersinin kavramlarına ilişkin kısa çoktan seçmeli quiz. Teams > Assignments içindeki bağlantıda seçenekleri işaretleyip Submit ile gönder; hoca yaklaşık 10 dakika süreceğini ve yanıtları kontrol edip geri döneceğini söyledi. Kesin saat ve kendi teslim durumun Teams'ten doğrulanmalı.",
       "due": "2026-10-19",
-      "status": "Atandı; teslim durumunu Teams'ten kontrol et"
+      "status": "13 Ekim'de atandı; teslim durumu bilinmiyor"
     },
     {
-      "title": "Ders içi çalışma – üniversitenin bilgi varlıkları",
-      "description": "10 bilgi varlığı listele; her biri için gizlilik, bütünlük ve erişilebilirliği 1–3 arası puanla; en kritik 3 varlığı gerekçelendir ve her biri için gerçekçi bir tehdit yaz. Hoca bunu 13 Ekim dersinde yaklaşık 20 dakikalık bireysel çalışma olarak verdi; Word dosyası veya ekran görüntüsüyle paylaşılabileceğini ve sonradan da inceleyebileceğini söyledi.",
+      "title": "Ders içi etkinlik: üniversitenin bilgi varlıkları",
+      "description": "Orta ölçekli bir üniversitenin güvenlik ekibi senaryosu: 10 bilgi varlığı listele (ör. notlar, araştırma verisi, e-posta, ders programı); her birini gizlilik, bütünlük ve erişilebilirlik için 1–3 arasında değerlendir; en kritik 3 varlığı nedenleriyle seç ve her biri için gerçekçi bir tehdit yaz. Yaklaşık 20 dakika verildi. Grupça yapılabileceğini, fakat bireysel çalışmayı tercih ettiğini söyledi. Word dosyasını sohbetten gönderme; erişim sorunu yaşayan öğrenciye elle çalışıp ekran görüntüsünü sonradan paylaşma seçeneği verildi.",
       "due": "",
-      "status": "13 Ekim dersinde verildi"
+      "status": "13 Ekim oturumunda verildi; kişisel teslim durumu bilinmiyor"
     }
   ],
-  "notes": "Kaynak: 13 Ekim 2026 tarihli Lecture 1–2 otomatik transkripti. Konuşma kaydı yazıya otomatik döküldüğü için terim ve özel adlarda hata olabilir; burada hocanın açık talimatları ile yorumlar ayrılmıştır.\n\nDersin işleyişi: Hoca kavramları tanımlayıp gündelik örneklerle açıyor, karşılaştırıyor ve ardından bir varlığa ya da senaryoya uygulatan kısa etkinlik veriyor. Sorulara açık; ilk derste ara süresini öğrencilerle birlikte kararlaştırdı. Teorinin yanında ileriki derslerde araçlarla uygulama göstereceğini söyledi. Toplam 30 saatin 15 iki saatlik ders yerine yaklaşık 10 üç saatlik oturumda işleneceğini anlattı; güncel takvimi Teams'ten izle.\n\nİlk derste işlenen/öne çıkan konular: siber güvenlik ve siber suçun temel tanımları; bilgisayar/ağ/veri ilişkisi; veri → bilgi → bilgi birikimi → bilgelik; bilgi toplumu ve dijital dönüşüm; bilginin bir varlık olarak değeri; CIA üçlüsü (gizlilik, bütünlük, erişilebilirlik), özgünlük ve inkâr edememe; güvenlik ve mahremiyet; bulut, IoT ve kritik altyapı; veri ihlali, yasal/etik boyut; kötü amaçlı yazılım türleri, fidye yazılımı ve korunma adımları.\n\nÇalışma çıkarımı: Terimleri ezberlemekle yetinme. Bir örnekte hangi bilginin korunacağını, CIA boyutlarının neden önemli olduğunu, gerçekçi tehdidi ve uygun önlemi açıklamaya çalış. Bu çıkarım, derste verilen bilgi varlığı değerlendirme etkinliğine dayanır; sınav soru biçimi henüz kesinleşmiş değildir.\n\nKaynaklar: Hoca okuma listesi ve sunumları Teams > Shared > Class Material alanına koyacağını, ders kaydının da sonradan yükleneceğini söyledi. Transkriptte bazı kitap adları net seçilemiyor; kesin listeyi slaytlardan doğrula."
+  "notes": "KAYNAK VE SINIR\n13 Ekim 2026 tarihli Lecture 1–2 Teams otomatik transkripti (2 saat 24 dakika). Bu sayfa transkriptteki hoca beyanlarını özetler; resmî syllabus, Teams ödev ekranı ve ders slaytları ayrıca kontrol edilmelidir. Kayıttaki bazı teknik ifadeler ve özel adlar hatalı yazılmış veya kendi içinde tutarsızdır; doğrulanmamış örnek ve istatistikleri kesin bilgi olarak aktarmıyorum.\n\nHOCA NASIL İŞLİYOR?\nİlk oturum büyük ölçüde temel kavramları slaytlar ve gündelik örneklerle açıklamaya ayrıldı. Hoca sık sık soru soruyor, öğrenci sorularını kabul ediyor ve kavramları bir senaryoda uygulatıyor. 1:24 civarında üniversitenin bilgi varlıklarını CIA ölçütleriyle puanlatan bir etkinlik verdi; 1:50 civarında geç paylaşımı inceleyip geri bildirim verebileceğini söyledi. Ders sonunda temel kavramları ölçen bir quiz atadı. Sonraki oturumlarda daha ayrıntılı konular ve küçük uygulamalar planladığını söyledi; bunlar henüz gerçekleşmiş etkinlikler olarak görülmemeli.\n\nİLK OTURUMUN KAVRAM HARİTASI\n1. Siber güvenlik, bilgi güvenliği ve fiziksel güvenlik; bilgisayar/ağ/veri; siber suçta bilgisayarın hedef veya araç olması.\n2. CIA: gizlilik (yetkili erişim), bütünlük (doğru ve değiştirilmemiş bilgi), erişilebilirlik (gerektiğinde ulaşım). Güvenlik ve mahremiyet farkı; özgünlük ve inkâr edememe.\n3. Veri → bilgi → bilgi birikimi → bilgelik; bilgi toplumu, dijital ekonomi, IoT, bulut, büyük veri, yapay zekâ ve kritik altyapının bilgiye bağımlılığı.\n4. Bilginin varlık değeri, yaşam döngüsü (oluşturma, saklama, kullanma, paylaşma, arşivleme, yok etme), sınıflandırma ve sahip/saklayıcı/kullanıcı rolleri. Mahremiyet, GDPR, veri ihlali ve hukuki/etik boyut.\n5. Hacking, phishing, DoS/DDoS, spam, malware, virüs, solucan, Truva atı, spyware, adware ve ransomware. Korunma önerileri arasında güvenlik yazılımı, güvenlik duvarı, güncelleme, gereksiz yazılımı kaldırma, yedekleme ve güvenlik ayarlarını kontrol etme vardı.\n\nÇALIŞMA ÇIKARIMI\nHocanın verdiği somut etkinliğe dayanarak, bir bilgi varlığını seçip CIA puanlarını gerekçelendirme, en önemli varlıkları önceliklendirme ve gerçekçi tehdit yazma pratiği yap. Kavram çiftlerini ayır: güvenlik/mahremiyet, gizlilik/bütünlük/erişilebilirlik, DoS/DDoS, virüs/solucan/Truva atı. Bu bir çalışma önerisidir; finalin soru tipi, puan dağılımı ve kapsamı henüz doğrulanmadı.\n\nMALZEME VE TAKVİM\nHoca sunumları Teams > Shared > Class Material alanına, ders kaydını da Teams'e yükleyeceğini söyledi. Bazı kitap adları otomatik dökümde belirsiz; okuma listesini slayttan doğrula. Salı derslerinden, kasım ortasında olası aradan ve aralık sonunda yeniden başlamaktan söz etti; kesin tarihleri Teams takviminden izle."
 }
