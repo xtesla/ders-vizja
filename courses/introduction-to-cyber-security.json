@@ -9,7 +9,7 @@
     },
     {
       "name": "Sınıf içi etkinlik",
-      "weight": "Oturum başına en çok yaklaşık 10 puan",
+      "weight": "Oturum başına yaklaşık 10 puan",
       "note": "Hoca her derste etkinlik olabileceğini ve yaklaşık/en çok 10 puan kazanılabileceğini söyledi. İlk dersin CIA etkinliğine özel verilmiş bir puan veya son teslim saati transkriptte yok."
     },
     {
@@ -25,7 +25,7 @@
     {
       "name": "Geçme ve ikinci sınav şansı",
       "weight": "Ağırlık değil, eşik",
-      "note": "Hoca geçmek için mümkün toplam puanın en az %40'ını gerektiğini söyledi. %40'ın altında fakat %30'un üzerinde kalanlar için yeniden sınav şansından söz etti; %30'un altına olmadığını belirtti. Tam %30 durumu ve uygulamanın ayrıntıları kayıtta net değil."
+      "note": "Hoca geçmek için mümkün toplam puanın en az %40'ını almak gerektiğini söyledi. %40'ın altında fakat %30'un üzerinde kalanlar için yeniden sınav şansından söz etti; %30'un altındakilere bu şansın olmadığını belirtti. Tam %30 durumu ve uygulamanın ayrıntıları kayıtta net değil."
     }
   ],
   "assignments": [
