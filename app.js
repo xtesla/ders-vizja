@@ -8,7 +8,7 @@ let catalog = [];
 const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (character) => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
 })[character]);
-const courseUrl = (id) => `#/ders/${encodeURIComponent(id)}`;
+const courseUrl = (id, group) => `#/ders/${encodeURIComponent(id)}${group ? `/${encodeURIComponent(group)}` : ''}`;
 const icon = (course) => `<span class="subject-icon ${escapeHtml(course.color)}">${escapeHtml(course.short)}</span>`;
 const badges = (groups) => `<div class="badges">${groups.map((group) => `<span class="badge">${escapeHtml(group)}</span>`).join('')}</div>`;
 
@@ -49,7 +49,8 @@ function listSection(items, emptyMessage, format) {
   return items?.length ? `<ul class="item-list">${items.map(format).join('')}</ul>` : `<div class="empty-state">${emptyMessage}</div>`;
 }
 
-async function renderCourse(course) {
+async function renderCourse(course, group) {
+  const routeHash = window.location.hash;
   breadcrumb.textContent = course.title.toUpperCase();
   renderNav(course.id);
   app.innerHTML = '<div class="empty-state">Ders bilgileri yükleniyor...</div>';
@@ -57,17 +58,23 @@ async function renderCourse(course) {
     const response = await fetch(`courses/${course.id}.json`);
     if (!response.ok) throw new Error('Ders dosyası okunamadı.');
     const data = await response.json();
-    if (window.location.hash !== courseUrl(course.id)) return;
+    if (window.location.hash !== routeHash) return;
+    const details = data.groups?.[group] ?? data;
+    const groupLinks = course.groups.length > 1
+      ? `<nav class="group-tabs" aria-label="Ders grubu">${course.groups.map((item) => `<a class="group-tab ${item === group ? 'active' : ''}" href="${courseUrl(course.id, item)}" ${item === group ? 'aria-current="page"' : ''}>${escapeHtml(item)} grubu</a>`).join('')}</nav>`
+      : badges(course.groups);
     app.innerHTML = `<a class="back-link" href="#/">← Tüm dersler</a>
-      <div class="detail-header">${icon(course)}<div><div class="eyebrow">DERS DETAYI</div><h1>${escapeHtml(course.title)}</h1>${badges(course.groups)}</div></div>
+      <div class="detail-header">${icon(course)}<div><div class="eyebrow">DERS DETAYI</div><h1>${escapeHtml(course.title)}</h1></div></div>
+      ${groupLinks}
+      <div class="instructor-row"><span>HOCA · ${escapeHtml(group)}</span><strong>${escapeHtml(details.instructor || 'Henüz eklenmedi')}</strong></div>
       <div class="detail-grid">
-        <section class="panel panel-wide"><div class="panel-label">01 / TAKİP</div><h2>Ödevler ve teslimler</h2>${listSection(data.assignments, 'Henüz ödev eklenmedi. Bu derse ait sohbetten ödev, son teslim tarihi ve durum bilgisi ekleyebilirsin.', (item) => `<li><span class="item-title">${escapeHtml(item.title)}</span>${item.description ? `<span class="item-sub">${escapeHtml(item.description)}</span>` : ''}${item.due ? `<span class="item-date">Teslim: ${escapeHtml(item.due)}</span>` : ''}${item.status ? `<span class="item-date">Durum: ${escapeHtml(item.status)}</span>` : ''}</li>`)}</section>
-        <section class="panel"><div class="panel-label">02 / BEKLENTİLER</div><h2>Hocanın istedikleri</h2>${textSection(data.requirements, 'Dersin gereklilikleri henüz eklenmedi.')}</section>
-        <section class="panel"><div class="panel-label">03 / DEĞERLENDİRME</div><h2>Puan sistemi</h2>${listSection(data.grading, 'Notlandırma bilgisi henüz eklenmedi.', (item) => `<li><span class="item-title">${escapeHtml(item.name)}${item.weight ? ` · ${escapeHtml(item.weight)}` : ''}</span>${item.note ? `<span class="item-sub">${escapeHtml(item.note)}</span>` : ''}</li>`)}</section>
-        <section class="panel"><div class="panel-label">04 / BİLGİLER</div><h2>Ders notları</h2>${data.instructor ? `<p class="detail-copy"><strong>Hoca:</strong> ${escapeHtml(data.instructor)}</p>` : ''}${textSection(data.notes, 'Hoca, kaynaklar ve diğer önemli bilgiler henüz eklenmedi.')}</section>
+        <section class="panel panel-wide"><div class="panel-label">01 / TAKİP</div><h2>Ödevler ve teslimler</h2>${listSection(details.assignments, 'Bu grup için henüz ödev eklenmedi. İlgili ders sohbetinden ödev, son teslim tarihi ve durum bilgisi ekleyebilirsin.', (item) => `<li><span class="item-title">${escapeHtml(item.title)}</span>${item.description ? `<span class="item-sub">${escapeHtml(item.description)}</span>` : ''}${item.due ? `<span class="item-date">Teslim: ${escapeHtml(item.due)}</span>` : ''}${item.status ? `<span class="item-date">Durum: ${escapeHtml(item.status)}</span>` : ''}</li>`)}</section>
+        <section class="panel"><div class="panel-label">02 / BEKLENTİLER</div><h2>Hocanın istedikleri</h2>${textSection(details.requirements, 'Bu grubun gereklilikleri henüz eklenmedi.')}</section>
+        <section class="panel"><div class="panel-label">03 / DEĞERLENDİRME</div><h2>Puan sistemi</h2>${listSection(details.grading, 'Bu grubun notlandırma bilgisi henüz eklenmedi.', (item) => `<li><span class="item-title">${escapeHtml(item.name)}${item.weight ? ` · ${escapeHtml(item.weight)}` : ''}</span>${item.note ? `<span class="item-sub">${escapeHtml(item.note)}</span>` : ''}</li>`)}</section>
+        <section class="panel"><div class="panel-label">04 / BİLGİLER</div><h2>Ders notları</h2>${textSection(details.notes, 'Bu grup için kaynaklar ve diğer önemli bilgiler henüz eklenmedi.')}</section>
       </div><p class="info-note">Bu sayfadaki bilgiler ilgili dersin ayrı veri dosyasından gelir. Yeni bilgi eklendikçe bu alanlar güncellenir.</p>`;
   } catch (error) {
-    if (window.location.hash !== courseUrl(course.id)) return;
+    if (window.location.hash !== routeHash) return;
     app.innerHTML = `<a class="back-link" href="#/">← Tüm dersler</a><div class="error-panel">Ders bilgileri yüklenemedi. ${escapeHtml(error.message)}</div>`;
   }
 }
@@ -75,9 +82,9 @@ async function renderCourse(course) {
 function route() {
   sidebar.classList.remove('open');
   menuButton.setAttribute('aria-expanded', 'false');
-  const match = /^#\/ders\/([a-z0-9-]+)$/.exec(window.location.hash);
+  const match = /^#\/ders\/([a-z0-9-]+)(?:\/([A-Z][0-9]+))?$/.exec(window.location.hash);
   const course = match && catalog.find((item) => item.id === match[1]);
-  if (course) renderCourse(course);
+  if (course) renderCourse(course, course.groups.includes(match[2]) ? match[2] : course.groups[0]);
   else renderHome();
   window.scrollTo(0, 0);
 }
@@ -97,4 +104,3 @@ fetch('courses/index.json').then((response) => {
 }).catch((error) => {
   app.innerHTML = `<div class="error-panel">Ders listesi yüklenemedi. ${escapeHtml(error.message)}</div>`;
 });
-

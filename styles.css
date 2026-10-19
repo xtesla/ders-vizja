@@ -70,10 +70,18 @@ h2 { letter-spacing: -.035em; }
 .empty-search { grid-column: 1 / -1; padding: 32px; color: #a6b0c7; border: 1px dashed #394663; border-radius: 14px; }
 .back-link { display: inline-flex; align-items: center; gap: 8px; color: #a8b5fa; font-size: 12px; font-weight: 700; margin-bottom: 31px; }
 .back-link:hover { color: white; }
-.detail-header { display: flex; align-items: start; gap: 19px; margin-bottom: 34px; }
+.detail-header { display: flex; align-items: start; gap: 19px; margin-bottom: 18px; }
 .detail-header .subject-icon { width: 55px; height: 55px; border-radius: 15px; font-size: 15px; flex: 0 0 55px; }
 .detail-header h1 { font-size: clamp(30px, 4vw, 45px); margin: 5px 0 12px; }
 .detail-header .badges { margin-top: 4px; }
+.group-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 16px; }
+.group-tab { border: 1px solid #3b4a75; background: #1c2740; color: #aebbe2; border-radius: 9px; padding: 9px 15px; font-size: 12px; font-weight: 700; }
+.group-tab:hover, .group-tab:focus-visible { border-color: #aab8ff; color: #fff; }
+.group-tab.active { background: #aab8ff; border-color: #aab8ff; color: #111931; }
+.detail-header + .badges { margin-bottom: 16px; }
+.instructor-row { display: flex; align-items: baseline; gap: 14px; margin: 0 0 28px; padding: 13px 16px; border: 1px solid #2b3650; background: #151d31; border-radius: 10px; }
+.instructor-row span { color: #8491b2; font-size: 10px; font-weight: 700; letter-spacing: .12em; }
+.instructor-row strong { color: #dce4ff; font-size: 12px; font-weight: 600; }
 .detail-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(230px, .72fr); gap: 16px; align-items: start; }
 .panel { border: 1px solid #2b3650; background: #151d31; border-radius: 16px; padding: 23px; }
 .panel h2 { margin: 0 0 17px; font-size: 18px; }
