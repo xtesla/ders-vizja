@@ -55,7 +55,7 @@ async function renderCourse(course, group) {
   renderNav(course.id);
   app.innerHTML = '<div class="empty-state">Ders bilgileri yükleniyor...</div>';
   try {
-    const response = await fetch(`courses/${course.id}.json`);
+    const response = await fetch(`courses/${course.id}.json`, { cache: 'no-store' });
     if (!response.ok) throw new Error('Ders dosyası okunamadı.');
     const data = await response.json();
     if (window.location.hash !== routeHash) return;
