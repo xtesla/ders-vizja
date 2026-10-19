@@ -1,1 +1,41 @@
-{"instructor":"","requirements":"","grading":[],"assignments":[],"notes":""}
+{
+  "instructor": "Dr. Kishu Gupta",
+  "requirements": "Dersler çevrim içi; final sınavının üniversitede yüz yüze yapılacağını söyledi. Ders sırasında sorulara ve kısa etkinliklere katılmanı, verilen işi mümkünse ders içinde tamamlamanı bekliyor. Ders dışı ödevlerin yönergesini ve kesin teslim tarihini Microsoft Teams'teki ödev açıklamasından kontrol et. Ödevleri oradan teslim et; bireysel veya grup görevi olabilir. Son tarihten önce düzeltip yeniden gönderebilirsin. Hoca, devamın, sınıf içi etkinliklerin ve ödevlerin önemini özellikle vurguladı. Teams'teki Class Material bölümünden slaytları ve paylaşılan okumaları takip et.",
+  "grading": [
+    {
+      "name": "Yazılı final sınavı",
+      "weight": "Ağırlık belirsiz",
+      "note": "Hoca sunumdaki notlandırma kısmında yazılı sınav için %100 dedi; aynı derste devam, etkinlik ve ödevlerin toplam puana ekleneceğini de birkaç kez söyledi. Kesin dağılım için Teams'teki resmî ölçütü veya hocanın açıklamasını doğrula."
+    },
+    {
+      "name": "Sınıf içi etkinlikler ve ödevler",
+      "weight": "Puan var, oran belirsiz",
+      "note": "Ders içi etkinliklerde yaklaşık 10 puandan, ödev örneğinde en çok 10 puandan söz etti. Zamanında teslim tam puan şansı sağlar; geç teslimde alınabilecek en yüksek puan yarıya düşer, teslim edilmezse sıfır."
+    },
+    {
+      "name": "Devam",
+      "weight": "Oran belirtilmedi",
+      "note": "Katılımın son puana ekleneceğini söyledi; bunun yazılı sınavla nasıl birleştirileceği net değil."
+    },
+    {
+      "name": "Geçme ve ikinci şans",
+      "weight": "",
+      "note": "Hoca geçmek için mümkün olan toplam puanın en az %40'ını gerektiğini söyledi. %40'ın altında ama %30'un üzerinde kalanlara yeniden sınav şansı verilebileceğini; %30'un altında bu şansın olmadığını belirtti. Kesin uygulamayı resmî ders kurallarıyla doğrula."
+    }
+  ],
+  "assignments": [
+    {
+      "title": "ICS Lecture Assignment 1 – Foundation of Cyber Security",
+      "description": "İlk dersin kavramlarına ilişkin çoktan seçmeli kısa quiz. Microsoft Teams > Assignments bölümündeki bağlantıdan yanıtlayıp Submit ile gönder. Hoca yaklaşık 10 dakika süreceğini söyledi.",
+      "due": "2026-10-19",
+      "status": "Atandı; teslim durumunu Teams'ten kontrol et"
+    },
+    {
+      "title": "Ders içi çalışma – üniversitenin bilgi varlıkları",
+      "description": "10 bilgi varlığı listele; her biri için gizlilik, bütünlük ve erişilebilirliği 1–3 arası puanla; en kritik 3 varlığı gerekçelendir ve her biri için gerçekçi bir tehdit yaz. Hoca bunu 13 Ekim dersinde yaklaşık 20 dakikalık bireysel çalışma olarak verdi; Word dosyası veya ekran görüntüsüyle paylaşılabileceğini ve sonradan da inceleyebileceğini söyledi.",
+      "due": "",
+      "status": "13 Ekim dersinde verildi"
+    }
+  ],
+  "notes": "Kaynak: 13 Ekim 2026 tarihli Lecture 1–2 otomatik transkripti. Konuşma kaydı yazıya otomatik döküldüğü için terim ve özel adlarda hata olabilir; burada hocanın açık talimatları ile yorumlar ayrılmıştır.\n\nDersin işleyişi: Hoca kavramları tanımlayıp gündelik örneklerle açıyor, karşılaştırıyor ve ardından bir varlığa ya da senaryoya uygulatan kısa etkinlik veriyor. Sorulara açık; ilk derste ara süresini öğrencilerle birlikte kararlaştırdı. Teorinin yanında ileriki derslerde araçlarla uygulama göstereceğini söyledi. Toplam 30 saatin 15 iki saatlik ders yerine yaklaşık 10 üç saatlik oturumda işleneceğini anlattı; güncel takvimi Teams'ten izle.\n\nİlk derste işlenen/öne çıkan konular: siber güvenlik ve siber suçun temel tanımları; bilgisayar/ağ/veri ilişkisi; veri → bilgi → bilgi birikimi → bilgelik; bilgi toplumu ve dijital dönüşüm; bilginin bir varlık olarak değeri; CIA üçlüsü (gizlilik, bütünlük, erişilebilirlik), özgünlük ve inkâr edememe; güvenlik ve mahremiyet; bulut, IoT ve kritik altyapı; veri ihlali, yasal/etik boyut; kötü amaçlı yazılım türleri, fidye yazılımı ve korunma adımları.\n\nÇalışma çıkarımı: Terimleri ezberlemekle yetinme. Bir örnekte hangi bilginin korunacağını, CIA boyutlarının neden önemli olduğunu, gerçekçi tehdidi ve uygun önlemi açıklamaya çalış. Bu çıkarım, derste verilen bilgi varlığı değerlendirme etkinliğine dayanır; sınav soru biçimi henüz kesinleşmiş değildir.\n\nKaynaklar: Hoca okuma listesi ve sunumları Teams > Shared > Class Material alanına koyacağını, ders kaydının da sonradan yükleneceğini söyledi. Transkriptte bazı kitap adları net seçilemiyor; kesin listeyi slaytlardan doğrula."
+}
