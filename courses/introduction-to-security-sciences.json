@@ -1,1 +1,25 @@
-{"instructor":"","requirements":"","grading":[],"assignments":[],"notes":""}
+{
+  "instructor": "Mateusz Górka",
+  "requirements": "HOCANIN AÇIK SÖYLEDİKLERİ (14 Ekim kaydı)\n• İlk alıştırmayı okuyup kendi düşüncelerini hazırlamanı ve sonraki derste tartışmanı istiyor. Derste metni incelemek için yaklaşık 15 dakika ayırdı; soruları sohbetten yazabileceğinizi söyledi.\n• Çalışmayı o anda göndermek gerekmiyordu. Takvimi kontrol ettikten sonra cuma laboratuvarı olmadığını fark edip görüşmeyi gelecek haftaya bıraktı. Hazırsanız derste hemen tartışmaya da açıktı.\n• Dosya eklemek için PDF veya Word biçimini kabul edeceğini söyledi; hangi Teams alanına yükleneceğini belirtmedi. Sorular için kendisine sohbetten ulaşılabileceğini söyledi.\n• 3. görevde bir olayın mikro (kişi), mezo (kurum) ve makro (ülke/toplum) etkilerini örnekle açıklamanızı bekliyor. Makro etki bağlama bağlı; teknik ayrıntıdan çok gerekçeli düşüncenizi önemsiyor.\n\nDOĞRULANACAKLAR\n• Alıştırmanın tam yönergesi, bütün görevleri, yükleme yeri ve kesin son tarihi Teams/resmî ödev belgesinden kontrol et. Kayıttaki “gelecek hafta” ifadesi tek başına resmî teslim tarihi değildir.",
+  "grading": [
+    {
+      "name": "Alıştırmalar ve sınav",
+      "weight": "Oran belirtilmedi",
+      "note": "Hoca, yeterli sayıda alıştırma yapmanın dönem sonu notunu iyileştirebileceğini ve sınav yerine geçebileceğini ima etti. Alıştırmaları atlayanların ayrıca sınanabileceğini söyledi; tam eşik, sınav biçimi ve resmî kural transkriptte net değil."
+    },
+    {
+      "name": "Devam ve sınıf katılımı",
+      "weight": "Kural belirtilmedi",
+      "note": "Bu kayıtta yoklama, zorunlu devam veya katılım puanı açıklanmadı. Derste soru ve tartışma vardı."
+    }
+  ],
+  "assignments": [
+    {
+      "title": "İlk alıştırma: güvenlik bilimlerine giriş",
+      "description": "Yönerge bu ekin içinde yok. Derste incelenip gelecek hafta tartışılması planlandı. 3. görevde örnek olayın mikro, mezo ve makro sonuçlarını gerekçelendir. Hoca PDF veya Word dosyasını kabul edeceğini söyledi; yükleme yeri belirsiz.",
+      "due": "",
+      "status": "Hazırlanacak; kesin tarih ve teslim alanı doğrulanacak"
+    }
+  ],
+  "notes": "KAYNAK: 14 Ekim 2026 tarihli “Meeting in General” otomatik transkripti (yaklaşık 68 dakika). Bu kayıt önceki derse atıf yapıyor; önceki dersin içeriği burada doğrudan mevcut değil. Otomatik yazımda bazı terimler bozuk olabilir.\n\nDERSİN İŞLENİŞİ — Hocanın anlatımı kavramları IT örnekleriyle bağlıyor; öğrencilerden kısa yanıtlar ve soru istiyor, ara veriyor, alıştırmayı okuyup tartışmaya zaman ayırıyor. Risk yönetimi ve diğer derslerle konuların örtüşebileceğini söyledi.\n\nHOCANIN VURGULADIĞI KONULAR — Ontoloji: güvenlik hem toplumsal tanımlama (konstrüktivizm) hem nesnel durum (pozitivizm) açısından incelenir. Analiz düzeyleri: mikro/kişi, mezo/kurum, makro/ülke ve dünya. IT güvenliği donanım, yazılım, insanlar, süreçler ve veriden oluşan bir sistemdir; en zayıf bileşen önemlidir. CIA üçlüsünü (gizlilik, bütünlük, erişilebilirlik) özellikle tekrar etti. Epistemoloji: test, log ve ölçümler ile görüşme, vaka ve gözlem birlikte kullanılmalı; olay olmaması güvenliğin kanıtı değildir, saldırganlar uyum sağlar ve bağlam riski değiştirir. Güvenlik yönetimi, teknik/fiziksel ortam ve güvenlik ilkeleri üç yapısal sütun olarak anlatıldı. Rutin faaliyet teorisi, güvenliğin zamanla bozulması, karmaşık sistemler, kritik altyapı, iş sürekliliği ve felaket kurtarma örnekleri işlendi.\n\nÇALIŞMA ÖNCELİĞİ (ÇIKARIM) — CIA üçlüsünü ve mikro/mezo/makro ayrımını örneklerle açıklayabil; pozitivizm ile konstrüktivizmi karşılaştır; nicel ve nitel yöntemlerin neden birlikte gerektiğini kavra. Bu sıra, hocanın tekrarları ve 3. görev açıklamasına dayanır; resmî sınav kapsamı değildir.\n\nTAKVİM VE BELİRSİZLİK — Hoca önce cuma görüşmesini düşündü, sonra cuma laboratuvarı olmadığını söyledi ve çalışmayı gelecek hafta görüşmeye çevirdi; konuşmada “21'i” geçiyor. 21 Ekim oturumunu ve herhangi bir teslim saatini resmî takvim/Teams üzerinden doğrula. Notlandırma yüzdeleri, devam kuralı ve sınav düzeni bu kayıtta kesinleşmiyor."
+}
