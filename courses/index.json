@@ -1,0 +1,11 @@
+[
+  {"id":"mathematics","title":"Mathematics","short":"MW","color":"teal","groups":["W1","C4"]},
+  {"id":"programming-languages-and-paradigms","title":"Programming Languages and Paradigms","short":"PL","color":"pink","groups":["W1","L3"]},
+  {"id":"operating-systems","title":"Operating Systems","short":"OS","color":"teal","groups":["W1","L3"]},
+  {"id":"academic-skills","title":"Academic Skills","short":"AS","color":"pink","groups":["W1"]},
+  {"id":"ict-security-and-data-protection","title":"ICT Security and Data Protection","short":"IS","color":"gold","groups":["L3"]},
+  {"id":"network-technologies","title":"Network Technologies","short":"NT","color":"pink","groups":["W1","L3"]},
+  {"id":"introduction-to-security-sciences","title":"Introduction to Security Sciences","short":"SS","color":"gold","groups":["W1"]},
+  {"id":"algorithms-and-complexity","title":"Algorithms and Complexity","short":"AC","color":"pink","groups":["W1","C3"]},
+  {"id":"introduction-to-cyber-security","title":"Introduction to Cyber Security","short":"IC","color":"gold","groups":["W1"]}
+]

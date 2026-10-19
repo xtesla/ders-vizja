@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1020" />
+    <meta name="description" content="Üniversite dersleri, ödevler ve değerlendirme bilgileri için kişisel takip panosu." />
+    <title>Ders Vizja · Ders Takibi</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar" aria-label="Ders menüsü">
+        <a class="brand" href="#/" aria-label="Ders Vizja ana sayfa">
+          <span class="brand-mark">DV<span>.</span></span>
+          <span class="brand-name">Ders <strong>Vizja</strong><small>Kişisel ders panosu</small></span>
+        </a>
+        <div class="sidebar-label">ÇALIŞMA ALANI</div>
+        <nav id="side-nav" class="side-nav"></nav>
+        <div class="sidebar-foot">Her dersin bilgisi ayrı dosyada tutulur.<br />Ders sohbetlerinde kolayca güncellenebilir.</div>
+      </aside>
+
+      <div class="main-wrap">
+        <header class="topbar">
+          <button id="menu-button" class="icon-button menu-button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="side-nav">☰</button>
+          <div class="topbar-path">ÜNİVERSİTE <span>/</span> <strong id="breadcrumb">GENEL BAKIŞ</strong></div>
+          <div class="topbar-tag"><span class="live-dot"></span> DERS TAKİP ALANI</div>
+        </header>
+        <main id="app" tabindex="-1"></main>
+        <footer class="footer">Ders Vizja <span>·</span> Bilgiler ders sohbetleriyle güncellenir</footer>
+      </div>
+    </div>
+  </body>
+</html>
