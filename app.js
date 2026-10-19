@@ -50,7 +50,7 @@ function listSection(items, emptyMessage, format) {
 }
 
 async function renderCourse(course) {
-  breadcrumb.textContent = course.title.toLocaleUpperCase('tr');
+  breadcrumb.textContent = course.title.toUpperCase();
   renderNav(course.id);
   app.innerHTML = '<div class="empty-state">Ders bilgileri yükleniyor...</div>';
   try {
@@ -97,3 +97,4 @@ fetch('courses/index.json').then((response) => {
 }).catch((error) => {
   app.innerHTML = `<div class="error-panel">Ders listesi yüklenemedi. ${escapeHtml(error.message)}</div>`;
 });
+
